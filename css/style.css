@@ -1,0 +1,35 @@
+* {
+  font-family: "Lato" sans-serif;
+}
+
+header {
+  padding: 20px 0;
+  background-color: #e9ecef73;
+}
+
+.icon {
+  height: 50px;
+  background-color: none;
+}
+
+h1 {
+  font-weight: 300;
+  font-family: "Lato" sans-serif;
+}
+
+article {
+  padding-top: 5%;
+}
+
+.btn {
+  margin-top: 2%;
+  background-color: #e9ecef;
+  color: black;
+  border: none;
+  box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.315);
+  font-weight: 300;
+}
+.btn:hover {
+  color: #050505;
+  background-color: rgb(255, 255, 255);
+}

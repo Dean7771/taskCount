@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Задачник</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex">
+            <div></div>
+            <h1 class="text-left text-black">Задачник</h1>
+            <h1 class="text-left text-black ms-auto">КаунтСервис</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <article>
+      <div class="container">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Название организации</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Организация"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Название базы данных</label
+          >
+          <input
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="База данных"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Выбрать приоритет задачи</label>
+          <select class="form-select" aria-label="Default select example">
+            <option selected></option>
+            <option value="1">Низкий</option>
+            <option value="2">Обычный</option>
+            <option value="3">Срочный</option>
+          </select>
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Описание проблемы</label
+          >
+          <textarea
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="5"
+            placeholder="Описание"
+          ></textarea>
+        </div>
+        <button
+          type="button"
+          onclick="submit()"
+          class="btn btn-secondary btn-lg"
+        >
+          Отправить задачу
+        </button>
+      </div>
+    </article>
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+  </body>
+</html>
