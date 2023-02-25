@@ -4,29 +4,42 @@ function submit() {
   let inputLevel = document.getElementById("3").value;
   let inputText = document.getElementById("4").value;
 
-  if ((inputLevel = 1)) inputLevel_1 = "Легко";
-  else if ((inputLevel = 2)) inputLevel_1 = "Средне";
-  else if ((inputLevel = 2)) inputLevel_1 = "Срочно";
-
-  var con = confirm(
-    "Организация: " +
-      inputOrg +
-      "\nНазвание базы данных: " +
-      inputBase +
-      "\nПриоритет задачи: " +
-      inputLevel_1 +
-      "\nОписание задачи: " +
-      inputText
-  );
-
-  if ((con = false)) {
-    alert("Мы отправили все данные.");
+  if (
+    inputOrg == "" ||
+    inputBase == "" ||
+    inputLevel == "" ||
+    inputText == ""
+  ) {
+    alert("Заполните поля.");
   } else {
-    alert("Заполните повторно, если допустили ошибку");
+    if ((inputLevel = 1)) {
+      inputLevel = "Низкий";
+    } else if ((inputLevel = 2)) {
+      inputLevel = "Обычный";
+    } else if ((inputLevel = 2)) {
+      inputLevel = "Срочно";
+    }
+
+    var windowConfirm = confirm(
+      "Организация: " +
+        inputOrg +
+        "\nНазвание базы данных: " +
+        inputBase +
+        "\nПриоритет задачи: " +
+        inputLevel +
+        "\nОписание задачи: " +
+        inputText
+    );
+
+    if (windowConfirm) {
+      alert("Мы отправили все данные.");
+    } else if (!windowConfirm) {
+      alert("Данные не были отправлены.");
+    }
   }
 
-  /*   console.log(inputOrg);
-  console.log(inputBase);
-  console.log(inputLevel_1);
-  console.log(inputText); */
+  /*   console.log(inputOrg + " 1");
+  console.log(inputBase + " 2");
+  console.log(inputLevel + " 3");
+  console.log(inputText + " 4"); */
 }
