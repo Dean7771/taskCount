@@ -1,0 +1,22 @@
+{
+  "name": "count",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dean7771/taskCount.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dean7771/taskCount/issues"
+  },
+  "homepage": "https://github.com/Dean7771/taskCount#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.8.0"
+  }
+}

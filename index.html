@@ -61,9 +61,9 @@
             aria-label="Default select example"
           >
             <option selected></option>
-            <option value="1">Низкий</option>
-            <option value="2">Обычный</option>
-            <option value="3">Срочный</option>
+            <option value="Низкий">Низкий</option>
+            <option value="Обычный">Обычный</option>
+            <option value="Срочный">Срочный</option>
           </select>
         </div>
         <div class="mb-3">
@@ -78,17 +78,14 @@
             placeholder="Описание"
           ></textarea>
         </div>
-        <button
-          type="button"
-          onclick="submit()"
-          class="btn btn-secondary btn-lg"
-        >
+        <button id="save" type="submit" class="btn btn-secondary btn-lg">
           Отправить задачу
         </button>
       </div>
     </article>
 
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/script.js"></script>
+    <script src="/js/App.js"></script>
   </body>
 </html>
