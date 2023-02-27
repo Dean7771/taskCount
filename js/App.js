@@ -49,6 +49,10 @@ save.addEventListener("click", async (e) => {
       });
 
       alert("Мы отправили все данные.");
+      document.getElementById("1").value = "";
+      document.getElementById("2").value = "";
+      document.getElementById("3").value = "";
+      document.getElementById("4").value = "";
     } else if (!windowConfirm) {
       alert("Данные не были отправлены.");
     }
