@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon" />
-    <link href="/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link href="./../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -67,6 +67,19 @@
             <option value="Срочный">Срочный</option>
           </select>
         </div>
+        <label class="form-label">Добавить файл</label>
+        <div class="mb-3">
+          <input
+            type="file"
+            class="form-control"
+            aria-label="file example"
+            required
+          />
+          <div class="invalid-feedback">
+            Пример обратной связи неверной формы выбора файла
+          </div>
+        </div>
+
         <div class="mb-3">
           <label for="exampleFormControlTextarea1" class="form-label"
             >Описание проблемы</label
@@ -86,7 +99,7 @@
     </article>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-    <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="/js/App.js"></script>
+    <script src="./../js/bootstrap.bundle.min.js"></script>
+    <script src="./../js/App.js"></script>
   </body>
 </html>

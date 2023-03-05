@@ -33,3 +33,11 @@ article {
   color: #050505;
   background-color: rgb(255, 255, 255);
 }
+
+.text1 {
+  margin-top: 7vh;
+}
+
+.button-auth {
+  margin-top: 2vh;
+}
