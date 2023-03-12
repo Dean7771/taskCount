@@ -48,6 +48,19 @@ save.addEventListener("click", async (e) => {
         All_Text: All_Text,
       });
 
+      let inputFile = document.getElementById("image");
+      let file = inputFile.files[0];
+
+      const { data, error } = await database.storage
+        .from("images")
+        .upload("public/" + file?.name, file);
+
+      if (data) {
+        console.log(data);
+      } else if (error) {
+        console.log(error);
+      }
+
       alert("Мы отправили все данные.");
       document.getElementById("1").value = "";
       document.getElementById("2").value = "";

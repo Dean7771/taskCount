@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/Dean7771/taskCount#readme",
   "dependencies": {
-    "@supabase/supabase-js": "^2.8.0"
+    "@supabase/supabase-js": "^2.8.0",
+    "multer": "^1.4.5-lts.1"
   }
 }

@@ -28,7 +28,7 @@
       </div>
     </header>
 
-    <article>
+    <form>
       <div class="container">
         <div class="mb-3">
           <label for="exampleFormControlInput1" class="form-label" type="org"
@@ -68,16 +68,15 @@
           </select>
         </div>
         <label class="form-label">Добавить файл</label>
+
         <div class="mb-3">
           <input
+            id="image"
             type="file"
             class="form-control"
             aria-label="file example"
             required
           />
-          <div class="invalid-feedback">
-            Пример обратной связи неверной формы выбора файла
-          </div>
         </div>
 
         <div class="mb-3">
@@ -92,11 +91,11 @@
             placeholder="Описание"
           ></textarea>
         </div>
-        <button id="save" type="submit" class="btn btn-secondary btn-lg">
+        <button id="save" type="event" class="btn btn-secondary btn-lg">
           Отправить задачу
         </button>
       </div>
-    </article>
+    </form>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
     <script src="./js/bootstrap.bundle.min.js"></script>
