@@ -55,11 +55,11 @@ save.addEventListener("click", async (e) => {
         .from("images")
         .upload("public/" + file?.name, file);
 
-      if (data) {
+      /*      if (data) {
         console.log(data);
       } else if (error) {
         console.log(error);
-      }
+      } */
 
       alert("Мы отправили все данные.");
       document.getElementById("1").value = "";
