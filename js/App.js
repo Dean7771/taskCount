@@ -12,6 +12,7 @@ save.addEventListener("click", async (e) => {
   let Name_Base = document.getElementById("2").value;
   let Lvl_priority = document.getElementById("3").value;
   let All_Text = document.getElementById("4").value;
+  let Name_Image = document.getElementById("image").value;
 
   if (
     Name_Org == "" ||
@@ -46,6 +47,7 @@ save.addEventListener("click", async (e) => {
         Name_Base: Name_Base,
         Lvl_priority: Lvl_priority,
         All_Text: All_Text,
+        Name_Image: Name_Image,
       });
 
       let inputFile = document.getElementById("image");
