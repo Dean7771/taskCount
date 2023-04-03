@@ -41,3 +41,13 @@ article {
 .button-auth {
   margin-top: 2vh;
 }
+
+#form-wrap {
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+#form-wrap.open {
+  transition: opacity 0.5s;
+  opacity: 1;
+}

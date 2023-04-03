@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon" />
-    <link href="./css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link href="./../css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -28,77 +28,50 @@
       </div>
     </header>
 
-    <article>
-      <div class="container">
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label" type="org"
-            >Название организации</label
-          >
-          <input
-            id="1"
-            type="orga"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="Организация"
-          />
-        </div>
-        <div class="mb-3">
-          <label for="exampleFormControlInput1" class="form-label"
-            >Название базы данных</label
-          >
-          <input
-            id="2"
-            type="email"
-            class="form-control"
-            id="exampleFormControlInput1"
-            placeholder="База данных"
-          />
-        </div>
-        <div class="mb-3">
-          <label class="form-label">Выбрать приоритет задачи</label>
-          <select
-            id="3"
-            class="form-select"
-            aria-label="Default select example"
-          >
-            <option selected></option>
-            <option value="Низкий">Низкий</option>
-            <option value="Обычный">Обычный</option>
-            <option value="Срочный">Срочный</option>
-          </select>
-        </div>
-        <label class="form-label">Добавить файл</label>
+    <div>
+      <h1
+        class="text1 d-flex justify-content-center text-left text-black colum"
+      >
+        Авторизация пользователя
+      </h1>
+    </div>
 
+    <div class="container d-flex justify-content-center p-5">
+      <form>
         <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Логин</label>
           <input
-            id="image"
-            type="file"
             class="form-control"
-            aria-label="file example"
-            required
+            id="exampleInputEmail1"
+            aria-describedby="emailHelp"
+            placeholder=""
+          />
+          <div id="emailHelp" class="form-text">
+            Введите логин, который был предоставлен
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">Пароль</label>
+          <input
+            type="password"
+            class="form-control"
+            id="exampleInputPassword1"
+            placeholder=""
           />
         </div>
-
-        <div class="mb-3">
-          <label for="exampleFormControlTextarea1" class="form-label"
-            >Описание проблемы</label
-          >
-          <textarea
-            id="4"
-            class="form-control"
-            id="exampleFormControlTextarea1"
-            rows="5"
-            placeholder="Описание"
-          ></textarea>
-        </div>
-        <button id="save" type="event" class="btn btn-secondary btn-lg">
-          Отправить задачу
-        </button>
-      </div>
-    </ф>
+        <div id="emailHelp" class="form-text">Введите пароль</div>
+        <a
+          href="mainTable.html"
+          type="submit"
+          class="btn btn-primary button-auth"
+        >
+          Авторизоваться
+        </a>
+      </form>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
-    <script src="./js/bootstrap.bundle.min.js"></script>
-    <script src="./js/App.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/Auth.js"></script>
   </body>
 </html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/favicon-32x32.png" type="image/x-icon" />
+    <link href="./css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Задачник</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex">
+            <div></div>
+            <h1 class="text-left text-black">Задачник</h1>
+            <h1 class="text-left text-black ms-auto">КаунтСервис</h1>
+          </div>
+        </div>
+      </div>
+
+      <!--       <a
+        type="button"
+        href="auth.html"
+        onclick="disp(document.getElementById('form1'))"
+        class="btn btn-success"
+      >
+        Авторизоваться
+      </a> -->
+    </header>
+
+    <!-- Начало плавающей формы  -->
+    <!--     <div class="container">
+      <form
+        id="form1"
+        style="display: none"
+        role="form"
+        action="/requestFine"
+        autocomplete="off"
+        method="POST"
+      >
+        <input class="form-control" placeholder="Логин" />
+        <input class="form-control" type="password" placeholder="Пароль" />
+        <button type="submit" class="btn btn-success">Войти</button>
+      </form>
+    </div> -->
+
+    <!-- Конец плавающей формы  -->
+    <article>
+      <div class="container">
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label" type="org"
+            >Название организации</label
+          >
+          <input
+            id="1"
+            type="orga"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="Организация"
+          />
+        </div>
+        <div class="mb-3">
+          <label for="exampleFormControlInput1" class="form-label"
+            >Название базы данных</label
+          >
+          <input
+            id="2"
+            type="email"
+            class="form-control"
+            id="exampleFormControlInput1"
+            placeholder="База данных"
+          />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Выбрать приоритет задачи</label>
+          <select
+            id="3"
+            class="form-select"
+            aria-label="Default select example"
+          >
+            <option selected></option>
+            <option value="Низкий">Низкий</option>
+            <option value="Обычный">Обычный</option>
+            <option value="Срочный">Срочный</option>
+          </select>
+        </div>
+        <label class="form-label">Добавить файл</label>
+
+        <div class="mb-3">
+          <input
+            id="image"
+            type="file"
+            class="form-control"
+            aria-label="file example"
+            required
+          />
+        </div>
+
+        <div class="mb-3">
+          <label for="exampleFormControlTextarea1" class="form-label"
+            >Описание проблемы</label
+          >
+          <textarea
+            id="4"
+            class="form-control"
+            id="exampleFormControlTextarea1"
+            rows="5"
+            placeholder="Описание"
+          ></textarea>
+        </div>
+        <button id="save" type="event" class="btn btn-secondary btn-lg">
+          Отправить задачу
+        </button>
+      </div>
+    </article>
+
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/App.js"></script>
+  </body>
+</html>
